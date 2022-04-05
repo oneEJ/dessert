@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Event </title>
+	<link href="css/style4.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"> 
+	
+<script src="js/jquery-3.6.0.min.js"> </script> 
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<!------------------------------->
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/main.css">
+
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/main.js"></script>
+<!------------------------------->
+<script src="js/sub_brand.js" type="text/javascript"></script>
+<script src="js/event.js" type="text/javascript"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+<div class="wrapper">
+
+<header class="main_h">
+    <div class="row">
+        <a class="logo" href="index.html">ANGEL'S HOUSE</a>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+		 <nav>
+		  <ul>
+			<li><a href="sub_brand.html">Brand</a></li>
+			<li><a href="sub_cake.html">Cake</a></li>
+			<li><a href="#">Muffin</a></li>
+			<li><a href="#">Pie</a></li>  
+			<li><a href="sub_event.html">Notice</a></li>
+		  </ul>
+		 </nav>
+    </div> <!-- / row -->
+</header>
+
+ 
+<div class="main_event">
+	<section id="title">
+		 <div class="sub_title">NOTICE</div>
+		 <div class="sub_title_top">
+			 <img src="img/subtopevent2.jpg" alt="event_top">
+			 <span>오늘 하루가 디저트만큼 달콤하기를 바라며, 전해드리는 ANGEL'S HOUSE 소식을 바로 확인해보세요</span>
+		 </div>
+	</section>
+	
+ <!--  <img class="word" src="img/backword_event.png" alt="event">-->
+	<section id="container_event"> <!--400*690 원래 560*850-->
+
+		<div class="event_images">
+			 <div class="event_images_big">
+				<div class="eventSlides" style="display:block;"><a href="##"><img src="img/hashtag.jpg"  alt="이벤트_해시태그"></a></div>
+				<div class="eventSlides"><img src="img/survery.jpg" alt="이벤트_설문조사"></div>
+				<div class="eventSlides"><img src="img/cafe.jpg" alt="이벤트_커피"> </div>
+				<div class="eventSlides"><img src="img/carrot.jpg" alt="이벤트_당근케익"> </div>
+				<div class="eventSlides"><img src="img/rose.jpg" alt="이벤트_발렌타인데이"></div>
+				<div class="eventSlides"><img src="img/tea.jpg" alt="이벤트_차"></div>
+				<div class="eventSlides"><img src="img/jeju.jpg" alt="이벤트_물"></div>
+				<div class="eventSlides"><img src="img/halloween.jpg" alt="이벤트_할로윈"></div>
+				<div class="eventSlides"><img src="img/icesummer.jpg"  alt="이벤트_아이스크림"></div>
+				<div class="eventSlides"><img src="img/cherry.jpg" alt="이벤트_체리"></div>
+				<div class="eventSlides"><img src="img/august.jpg" alt="이벤트_8월"></div>
+				<div class="eventSlides"><img src="img/canele.jpg"  alt="이벤트_까눌레"></div>
+			  
+			   <a class="prev roll_left" onclick="plusSlides(-1)"> &#10094; </a>
+			   <a class="next roll_right" onclick="plusSlides(1)">&#10095;</a>
+			</div><!--event_images_big-->
+				<!-- div /div 있던거 지움 Next and previous buttons -->
+
+			<div class="event_images_small">
+				<div class="column"><img class="smallSlides cursor" src="img/hashtag.jpg" style="width:100px" onclick="currentSlide(1)" alt="이벤트_해시태그2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/survery.jpg" style="width:100px" onclick="currentSlide(2)" alt="이벤트_설문조사2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/cafe.jpg" style="width:100px" onclick="currentSlide(3)" alt="이벤트_커피2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/carrot.jpg" style="width:100px" onclick="currentSlide(4)" alt="이벤트_당근케익2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/rose.jpg" style="width:100px" onclick="currentSlide(5)" alt="이벤트_발렌타인데이2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/tea.jpg" style="width:100px" onclick="currentSlide(6)" alt="이벤트_차2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/jeju.jpg" style="width:100px" onclick="currentSlide(7)" alt="이벤트_물2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/halloween.jpg" style="width:100px" onclick="currentSlide(8)" alt="이벤트_할로윈2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/icesummer.jpg" style="width:100px" onclick="currentSlide(9)" alt="이벤트_아이스크림2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/cherry.jpg" style="width:100px" onclick="currentSlide(10)" alt="이벤트_체리2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/august.jpg" style="width:100px" onclick="currentSlide(11)" alt="이벤트_8월2"></div>
+				<div class="column"><img class="smallSlides cursor" src="img/canele.jpg" style="width:100px" onclick="currentSlide(12)" alt="이벤트_까눌레2"></div>
+			</div>
+		</div><!--event_images -->
+	</section>
+
+
+
+ 
+	<footer id="footer">
+	 <div class="footer_nav">
+		<ul>
+		 <li><a href="#" >브랜드</a></li>
+		 <li><a href="#">공지사항</a></li>
+		 <li><a href="#">고객센터</a></li>
+		 <li><a href="#">매장안내</a></li>
+		 <li><a href="#">가맹점문의</a></li>
+		</ul>
+	 </div>
+
+	 <div class="footer_logo"><img src="img/logo_footer.png" alt="하단로고" ></div>
+
+	 <div class="info">
+		<ul>
+			<!--<li><span class="info_text">사업자등록번호&nbsp; </span>514-201509-1946015</li>-->
+			<li><span class="info_text">본사주소&nbsp; </span>서울 강남구 강남대로 94길 10, K스퀘어 13</li>
+			<li><span class="info_text">대표번호&nbsp; </span>02-315-1122</li>
+			<li><span class="info_text">메일주소&nbsp; </span>angels_house@angelshouse.co.kr</li>
+			<li><span class="info_text">고객센터&nbsp; </span>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</li>
+		</ul>
+	 </div>
+
+	 <div>
+	  <ul class="sns">
+		<!--<li><a href="#"><i class="fa fa-envelope"></i></a></li>-->
+		<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  </ul>
+	 </div>
+	</footer>
+</div>	
+</body>
+</html>
