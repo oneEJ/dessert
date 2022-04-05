@@ -1,0 +1,209 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap'); /*울트라 font-family: 'Ultra', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');  /*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); /*font-family: 'Noto Sans KR', sans-serif;*/
+
+*{margin:0; padding:0;}
+a:link,a:visited {text-decoration:none;color:#000;}
+
+ul li{list-style:none;}
+
+/*노랑 #FFF89A; 살구 #FFB2A6; 핑 #FF8AAE; 하늘 #9ADCFF;*/
+
+/*--------------상단------------------------*/
+.wrapper{width:1350px; margin:0 auto;}
+
+.header_nav ul{display:flex; justify-content:flex-end;}
+.header_nav li{font-family:'Noto Sans KR', sans-serif; padding:10px; font-size:0.8rem;}
+.header_nav a{display:block; color:#000;}
+.header_nav a:hover{color:#4297c5;} /*#D6E5FA*/
+
+.logo{ width:100%; text-align:center;}
+.logo img{width:55%;}/*너무 커 width:800px; height:250px; */
+
+/*--------------네비게이션-------------------*/
+#m_nav > ul {width:100%; margin:0 auto;text-align:center;position:relative; background:#D6E5FA; }/*#9ADCFF; 이 색이 개이쁜데...쨍해서..*/
+#m_nav > ul > li{ display:inline-block; position:relative; 
+					width:100px; height:40px; padding:10px 0;}
+#m_nav > ul > li > a{display:block; line-height:40px; 
+					font-family: 'Ultra', serif;
+					text-align:center; color:#000; transition:all 0.7s;}
+#m_nav > ul > li:hover > a{color:#fff; background:#407CDB; transition:all 0.7s; }
+/*쇼핑백 색보다 조금 탁해:#4297c5 유사색 : #407CDB; #3D4FD1; 둘다 이뽀  #2666CF;-> 원래 이거였어*/			
+
+/*-------------콘텐츠------------------------*/
+.title{font-family: 'Ultra', serif; font-size:20px;}
+/*--------------best 제품--------------------*/	
+#content{text-align:center; margin-top:5rem;}
+.best_roll li{font-family: 'Noto Sans KR', sans-serif;}
+.best_product{width:700px; height:200px; margin:25px auto 0 auto; padding:0 20px; position:relative;}
+.best_product > button{display:block; position:absolute; width:20px; height:100%; top:0; border:none;}
+.best_product > button.roll_left{background:none;left:-15px;font-weight: bold;}
+.best_product > button.roll_right{background:none; right:-15px;font-weight: bold;}
+.best_product .roll{width:100%; height:100%; overflow:hidden;padding-top:25px;}
+.best_product .roll ul{width:1000%;}
+.best_product .roll ul li{float:left; width:140px; text-align:center;}
+.best_product .roll ul li img{width:150px;}
+.best_product .roll ul li span{display:block; font-size:0.9rem;}
+.best_product .roll ul li a:hover img{opacity:0.5;}
+
+
+/*-------------선물 3개---------------------*/
+#content2{text-align:center; margin-top:5rem; margin-bottom:25px;}
+.present{margin-top:30px;}
+.present li{display:inline-block; position:relative;}
+.present img{width:300px; height:400px;}
+.present li:hover img{transform: scale(0.9); transition:all 0.5s; background:rgba(255,255,255,0.8);}
+.present a{display:block;}
+.present span{display:none;position:absolute;  background:(255 178 166 / 40%); font-weight:bold; color:#fff;
+					width:250px; height:80px; line-height:80px; bottom:60px;left:26px; transition:all 0.5s}
+.present span::before{background:#FFB2A6;
+	content:"";
+	inset:0;
+	width:250px; height:70px; line-height:70px; bottom:60px;left:26px;
+	position:absolute;
+	transform:scaleX(1);
+	transform-origin:left; 
+	transition:transform 0.5s ease-in-out;
+	z-index:-1;}
+
+
+.present li:hover span{display:block; transition:all 0.5s; transform:scaleX(1); transform-origin:right;}
+.present li:hover span::before{content:""; display:block;transition:all 0.5s;
+						transform:scaleX(1); }
+.present li:hover span::after{content:"\25E3"; color:#FFB2A6; font-size:23px;top:-49.5px; right:-27.5px; position:absolute;  z-index:-2;}
+.present li:hover{background:rgba(255 178 166 / 40%);}
+/* 틀에 그림넣어서 확대 되는데 이미지가 흐려...
+.test li{width:300px; height:400px; overflow:hidden; box-sizing:border-box; display:inline-block;
+border-top-left-radius: 50% 40% !important; border-top-right-radius: 50% 40% !important;} 	
+.test img{width:300px; height:400px;}
+.test li:hover img{transform: scale(1.1);transition:all 0.5s; }*/
+
+
+/*-----중간 배너------*/
+.middle_banner{margin-top:5rem;text-align:center; margin-bottom:25px;}
+.middle_banner a{display:inline-block; width:700px; height:100px;}
+.middle_banner img{width:700px; height:100px; }
+
+/*------main_text--bread-----*/
+#content3{ margin-top:5rem;text-align:center;margin-bottom:25px;}
+.only{width:70%; height:378px; margin:25px auto 0 auto; padding:0 20px; position:relative;}
+.only > button{display:block; position:absolute; width:20px; height:100%; top:0; border:none;}
+.only > button.roll_left2{background:none;left:-15px;font-weight: bold;}
+.only > button.roll_right2{background:none; right:-15px;font-weight: bold;}
+.only > .roll2{width:100%; height:100%; overflow:hidden;padding-top:25px;}
+
+/*쇼핑백 3000*2000, 분홍상자1000*800, 상자2개 1000*940, 캔들 1000*700, 태그 1500*2000, 1000*1333, 1000*1179,600*710  유리 1500*1000*/
+
+.only_sub{position:absolute; top:0; left:0; width:100%;  display:flex; justify-content:space-around; text-align:center; font-family:'Noto Sans KR', sans-serif;}
+.only_sub img{width:600px;}
+
+.only_text{width:35%;background:#fff;}
+
+/*원*/
+.container {position: relative; overflow: hidden; width: 50px; height: 50px;
+			left:80%; top:-3%; z-index:1;}
+.circleanimated {
+  width: 50px; height: 50px; border-radius: 50%;
+  background: #FFF89A; position: absolute;  opacity: 0.3;
+/*   top: 5%; left: 40%; */ }
+
+.circle {
+  width: 20px; height:20px;
+  border-radius: 50%;
+  background: #FFF89A; position: absolute;
+  top: calc(50px / 2 - 20px / 2);
+  left: calc(50px / 2 - 20px / 2);
+/*   top: 5%; left: 40%; */}
+
+
+@keyframes circle {
+  0% {transform: scale(0.1); opacity: 0.3;}
+	80% {transform: scale(0.7); opacity: 0.3;}
+	100% {transform: scale(0.7);opacity: 0;}}
+
+.one {animation: circle 4s infinite ease;}
+
+
+.only_text > p{font-weight:bold; margin-top:15%; font-size:1.2rem; position:relative;}
+.only_text span{width:100%; height:50%; padding:10%;display:block; font-size:0.8rem; text-align:justify; 
+				box-sizing:border-box; overflow:hidden; font-size:0.9rem;}
+
+
+
+.box {
+  border: 2px solid #407CDB;
+  width: 150px; height:15px; line-height:15px;
+  margin: 0 auto; margin-top:25px; padding:15px;
+  text-align:center; font-weight: 900; font-size:1rem; color: #407CDB;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.9s;}
+
+.circle1:before {/*첫동그라미*/
+  content: ''; position: absolute; background: #407CDB;
+  top: 90px; left: -40px;/*-많이 할수록 왼쪽으로 감*/
+  width: 110px; height: 100px;
+  border-radius: 50%;
+  transition: all 0.9s;}
+
+.circle1:after {/*중간동그라미*/
+  content: ''; position: absolute; background: #407CDB;
+  top: 70px; left: 25px;
+  width: 130px; height: 120px;
+  border-radius: 50%; transition: all 1.4s;}
+
+.circle2:before {/*마지막 동그라미*/
+  content: ''; position: absolute; background: #407CDB;
+  top: 110px; left: 100px;
+  width: 110px; height: 90px;
+  border-radius: 50%;
+  transition: all 0.9s;}
+
+.box:hover p {position: relative; color: #fff; z-index: 1;transition: all 0.5s;}
+.box:hover .circle1:before {top: -13px; transition: all 0.9s;}
+.box:hover .circle1:after {top: -13px; transition: all 1s;}
+.box:hover .circle2:before {top: -13px;transition: all 0.9s;}
+
+
+#content4{margin-top:5rem;text-align:center;margin-bottom:25px;}
+.shop{margin:25px auto 0 auto;display:flex; justify-content:space-around;}
+.shop_left{margin-top:3%;}
+.shop_left p{font-size:1.1rem; text-align:center;}
+/*.shop_left p:nth-child(2){font-size:1.2rem; font-weight:bold;}*/
+.shop_left_img{display:flex; justify-content:center;}
+.shop_left_img img{width:25%; padding:0.2%; margin-top:2%;}
+.shop > img{width:45%;}/*1500*1000*/
+
+
+
+#footer{width:100%; background:#D6E5FA; }
+.footer_nav ul{width:70%;  margin:0 auto;text-align:center; }
+.footer_nav li{padding:2% 0; width:15%; display:inline-block; }
+.footer_nav a{text-align:center; width: 100%; color:#000;
+			  font-family:'Noto Sans KR', sans-serif; font-weight:bold;
+			  padding-bottom:5%; position: relative;}
+.footer_nav a:before {
+  content: ""; position: absolute;
+  width: 100%; height: 2px;
+  bottom: 0; left: 0;
+  background-color: #407CDB; /*선색*/
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;}
+
+.footer_nav a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);}
+
+.footer_logo{width:100%;  text-align:center;}
+.footer_logo img{display:inline-block; width:30%; filter: grayscale(100%);}/*그레이 스케일 안돼*/
+.info{width:50%;margin:0 auto;}
+.info li{margin-left:10%; font-size:0.9rem;}
+.info_text{font-weight:bold; text-align:right; display:inline-block; width:25%; height:15%;}
+
+.sns{width:5%;background:pink; margin:0 auto; margin-top:2%;}
+.sns ul{text-align:center;}
+.sns li{display:inline-block; width:20%;padding:2%; margin-left:3%;text-align:center;}
+.sns a{display:block; }
